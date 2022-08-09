@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.App {
+  font-family: "Inter", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.container--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 0 14px 0;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.container--logo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0 0 0 0;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container--logo > .logo--burguer {
+  color: #333333;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  padding: 0px;
+}
+
+.container--logo > .logo--kenzie {
+  color: #eb5757;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 2px 0 0 0;
+  padding: 0px;
+}
+
+.container--input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 14px 0 0 0;
+  width: 382px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 15px;
+  background: #ffffff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.container--input > .input--pesquisa {
+  width: 70%;
+  height: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border: 0px;
+}
+
+.container--input > .button--pesquisa {
+  height: 40px;
+  width: 107px;
+  background: #27ae60;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.container--cart {
+  height: 100%;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.container--cart > .title--cart {
+  display: flex;
+  align-items: center;
+  padding-left: 21px;
+  width: 365px;
+  height: 65px;
+  background: #27ae60;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.container--cart > .infos--cart {
+  width: 100%;
+  max-width: 386px;
+  max-height: 350px;
+  overflow-y: scroll;
+  background-color: rgba(245, 245, 245, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.container--cart > .infos--cart > .list--cart {
+  max-height: 300px;
+  gap: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0px;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.container--cart > .infos--cart > .hr--cart {
+  width: 340px;
+  height: 2px;
+  background: #e0e0e0;
+  margin: 5px auto;
+}
+
+.container--cart > .infos--cart > .rodape--cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.container--cart > .infos--cart > .rodape--cart > .total--cart {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  padding: 0 8px 0 8px;
+}
+
+.container--cart > .infos--cart > .rodape--cart > .total--cart > .total {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.container--cart > .infos--cart > .rodape--cart > .total--cart > .preco {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.container--cart > .infos--cart > .rodape--cart > .clean--cart {
+  box-sizing: border-box;
+  width: 343px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+  margin: 20px 0 20px 19px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 924px) {
+  .container--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 125px 0 110px;
+    height: 80px;
+  }
+
+  .container--header > .container--input {
+    margin: 0px;
+  }
+
+  .App-header {
+    display: flex;
+    margin-left: 90px;
+    margin-right: 110px;
+    gap: 10px;
+  }
+
+  .container--cart {
+    margin-top: 14px;
+    margin-left: 0px;
+  }
+
+  .container--cart > .infos--cart {
+    max-height: 450px;
+    overflow-y: hidden;
+  }
+
+  .container--cart > .infos--cart > .list--cart {
+    height: 400px;
+    max-height: 400px;
+  }
+}

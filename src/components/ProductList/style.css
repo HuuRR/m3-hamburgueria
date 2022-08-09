@@ -1,0 +1,27 @@
+.container--card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  overflow-x: scroll;
+  padding: 0px;
+  height: 360px;
+  width: 100%;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 14px;
+  gap: 20px;
+}
+
+@media (min-width: 924px) {
+  .container--card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 720px;
+    margin-right: 0px;
+    overflow-y: hidden;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+}
